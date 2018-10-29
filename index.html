@@ -31,15 +31,15 @@
 </head>
 
 <body>
-  <video id="myPlayerID"
+  <video-js id="myPlayerID"
     data-video-id="5393799460001"
     data-account="1752604059001"
     data-player="ryxfFuudub"
     data-embed="default"
     data-application-id
     class="video-js"
-    controls></video>
-  <script src="//players.brightcove.net/1752604059001/ryxfFuudub_default/index.min.js"></script>
+    controls></video-js>
+  <script src="https://players.brightcove.net/1752604059001/ryxfFuudub_default/index.min.js"></script>
 
   <script type="text/javascript">
     // +++ Helpful method to convert seconds +++
@@ -71,7 +71,7 @@
       };
       return obj;
     }
-    videojs('myPlayerID').ready(function() {
+    videojs.getPlayer('myPlayerID').ready(function() {
       var myPlayer = this;
       // Initially  hide the overlay
       myPlayer.addClass("hide-overlay");
